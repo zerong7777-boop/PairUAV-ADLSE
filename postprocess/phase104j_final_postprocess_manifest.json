@@ -1,0 +1,55 @@
+{
+  "name": "phase104j_snap_e230_Hlat2_Dsupport",
+  "formula": {
+    "e230_stack": {
+      "angle": "HR_angle",
+      "distance": "0.511 * HR_distance + 0.189 * H8_distance + 0.300 * epoch2_distance"
+    },
+    "final_snap": {
+      "angle": "snap_to_2_degree_lattice(e230_angle), normalized to [-180, 180)",
+      "distance": "snap_to_nearest_unique_gt_distance_from_devsplit_v1_manifest"
+    }
+  },
+  "inputs": {
+    "hr_zip": "phase104j_HRofficial_raw_result.zip",
+    "h8_zip": "phase90_phase89_h8_midlate_fulltrain_1epoch_result.zip",
+    "epoch2_zip": "epoch2_pair_official_test_result_20260527_013814.zip",
+    "support_manifest": "devsplit_v1_official_metric_manifest.csv"
+  },
+  "weights": {
+    "hr": 0.511,
+    "h8": 0.189,
+    "epoch2": 0.300
+  },
+  "support": {
+    "distance_column": "gt_distance",
+    "expected_support_distance_count": 211,
+    "expected_support_rows": 204120
+  },
+  "zip_metadata": {
+    "entry_name": "result.txt",
+    "create_system": 3,
+    "external_attr": 2175008768,
+    "compression": "ZIP_DEFLATED",
+    "e230_date_time": [2026, 7, 1, 13, 10, 10],
+    "final_date_time": [2026, 7, 1, 13, 56, 58]
+  },
+  "expected": {
+    "row_count": 2773116,
+    "hr_zip_sha256": "294c1b96f352ed0c514423c943cc86b785db0ec86af696e99878ec17516615b1",
+    "hr_result_txt_sha256": "6c7da711caac6e6feb91355f7936a820e29f0c3bb19f4affbdfe195f60a507ad",
+    "h8_zip_sha256": "b7c7347b5db8d471132e480d810086e187f27ff0249289ba8fdd4f27e4d6444b",
+    "h8_result_txt_sha256": "50ce60ce71465b7ddf3445e98ccca65576729a16e40d28556cd0678e1c213360",
+    "epoch2_zip_sha256": "7fd5fbc532fbc58dc70940ef84739ea552064971b547feb584f2e09d7e3cbcee",
+    "epoch2_result_txt_sha256": "956711c0c387d5db5999d3c464267e9eb56c4b036688693ec51538fecc4edeba",
+    "e230_result_txt_sha256": "ed384ec336cbc4e1e21df6923391e1ce441d6e0e10b9a2ed68e48394e01280d4",
+    "e230_result_zip_sha256": "2c4f55a4df297806dd1a851e59b2af08ecc1e35e7361bb5b6e6f4ea9065a2548",
+    "final_result_txt_sha256": "32e1bfeca74b64617b0b8f8cc25618ec44c36fe14b4406682c8aa29ecb86a884",
+    "final_result_zip_sha256": "3e53085ca02a8441d247c3aa96cfeee9d0e3dc5944431c9c56fc842b01fe8a0f",
+    "support_manifest_sha256": "f61f909a7441ac95c3790725507fb60851f7f10b5f3e6b477e92b5e36a96d580"
+  },
+  "notes": [
+    "The support manifest is a train/dev split artifact, not hidden official-test labels.",
+    "The final submission is a deterministic postprocess package, not a raw single-checkpoint prediction."
+  ]
+}

@@ -1,0 +1,10 @@
+model_split,probe,gap
+H8 val,heading_8bin,0.609033
+H8 val,range_abs,0.25782
+H8 val,range_signed,0.589821
+H8 train,heading_8bin,0.599402
+H8 train,range_abs,0.310556
+H8 train,range_signed,0.544177
+Wbounded val,heading_8bin,0.348172
+Wbounded val,range_abs,0.218947
+Wbounded val,range_signed,0.595233

@@ -1,0 +1,23 @@
+{
+  "path_note": "Public manifest: runtime-specific absolute paths were replaced by release-relative paths or documented placeholders; row counts and hashes remain from the audited run.",
+  "checkpoint": "assets/phase89_h8_midlate_final/checkpoint-final.pth",
+  "json_root": "${OFFICIAL_TEST_JSON}",
+  "image_root": "${OFFICIAL_TEST_IMAGES}",
+  "output_dir": "outputs/h8_official",
+  "result_path": "outputs/h8_official/result.txt",
+  "device": "cuda",
+  "model": "Reloc3rRelpose(img_size=512, output_mode='pairuav_range_h0_heading_mid_late_heading_range')",
+  "batch_size": 16,
+  "num_workers": 8,
+  "amp": 1,
+  "dataset_expr": "PairUAV(json_root='${OFFICIAL_TEST_JSON}', image_root='${OFFICIAL_TEST_IMAGES}', split='test', resolution=(512,384), seed=777, require_labels=False)",
+  "total_dataset_samples": 2773116,
+  "target_samples": 2773116,
+  "target_batches": 173320,
+  "load_state_dict": "<All keys matched successfully>",
+  "started_at": "2026-06-20T03:16:55+0800",
+  "finished_at": "2026-06-20T14:02:52+0800",
+  "written_rows": 2773116,
+  "progress_path": "outputs/h8_official/inference_progress.log",
+  "zip_path": "outputs/h8_official/result.zip"
+}

@@ -1,0 +1,15 @@
+Copyright (c) 2026 PACE authors.
+
+This repository is released as a research artifact for PairUAV 2026 solution
+reproduction. It includes and modifies Reloc3r/CroCo-family source code.
+
+Reloc3r and CroCo are licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License
+(CC BY-NC-SA 4.0). This release follows the same non-commercial,
+share-alike license terms unless a file states a more restrictive notice.
+
+To view a copy of CC BY-NC-SA 4.0, visit:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Vendored third-party source code keeps its original copyright and notice files
+where available, including `croco/LICENSE` and `croco/NOTICE`.

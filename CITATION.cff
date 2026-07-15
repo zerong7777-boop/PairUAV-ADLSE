@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the repository and the PairUAV 2026 task description."
+title: "PACE: Polar Axis-Conditioned Estimation for PairUAV 2026"
+authors:
+  - name: "zerong7777-boop"
+version: "1.0.0"
+date-released: "2026-07-15"
+url: "https://github.com/zerong7777-boop/PairUAV-PACE"
+repository-code: "https://github.com/zerong7777-boop/PairUAV-PACE"
+keywords:
+  - PairUAV
+  - UAV relative localization
+  - polar regression
+  - challenge reproducibility
+license: "MIT"

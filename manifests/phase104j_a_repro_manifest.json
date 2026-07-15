@@ -1,0 +1,167 @@
+{
+  "name": "phase104j_A_checkpoint_and_inference_reproduction",
+  "scope": {
+    "goal": "Reproduce the raw official predictions used by the final submission from released source snapshots and checkpoints, then hand them to the B postprocess script.",
+    "not_claimed": "Bit-identical retraining from random seeds is not claimed; final leaderboard reproduction is guaranteed by the B raw-prediction postprocess path."
+  },
+  "base_repo": {
+    "repository": "reloc3r_pairuav",
+    "lab_git_head_observed": "90e478bd420942db7bc262bdb574b41a7d026318",
+    "note": "Use the source snapshots below as authoritative for the final phase104j release, because lab working tree changed after the final 5090 run."
+  },
+  "source_snapshots": [
+    {
+      "release_file": "phase104j_5090_current_pose_head.py",
+      "target_path": "reloc3r/pose_head.py",
+      "sha256": "3581e4b60cbdbc7e1fbc8af1868873b9560589312a7d6680401b72095db1ce1b",
+      "role": "PairUAV pose heads including Phase104eProtectedAxisAsymmetricExpertHead."
+    },
+    {
+      "release_file": "phase104j_5090_current_reloc3r_relpose.py",
+      "target_path": "reloc3r/reloc3r_relpose.py",
+      "sha256": "e0e6cc1832799a62581ecbc674f31db54a71ba21a91eb1ead8907d0ba0dc5f5a",
+      "role": "Reloc3rRelpose output_mode registry, including pairuav_phase104e_paaer_hard_heading_range and H8 mid-late."
+    },
+    {
+      "release_file": "phase104j_5090_current_trainable_policy.py",
+      "target_path": "reloc3r/trainable_policy.py",
+      "sha256": "3c9cd7e950bf13d31c05092b88e2aa1b99b1ec4d422b2722e3dba3a439a7170b",
+      "role": "Trainable parameter policies used by --trainable_policy all and phase104 policies."
+    },
+    {
+      "release_file": "phase104j_5090_current_loss.py",
+      "target_path": "reloc3r/loss.py",
+      "sha256": "bab3d9ee945f125676e458dd44c49ed6654f1811139f27b484e9c109428ddbff",
+      "role": "PairUAV official metric-aware loss implementation."
+    },
+    {
+      "release_file": "phase104j_5090_current_train.py",
+      "target_path": "train.py",
+      "sha256": "8b7d788051b4bd67e3272d48cd7eb23a5a621ca55a2c318153db9e12754a3c11",
+      "role": "Training entry with trainable_policy, milestone_steps, and named step checkpoint support."
+    },
+    {
+      "release_file": "phase104j_5090_current_eval_pairuav.py",
+      "target_path": "eval_pairuav.py",
+      "sha256": "64a7b47b23fe553cbe5462098560b482fce7c0a9eed8744a21d438a3249fffdb",
+      "role": "PairUAV validation evaluation entry."
+    },
+    {
+      "release_file": "phase104j_5090_current_infer_pairuav_with_progress.py",
+      "target_path": "infer_pairuav_with_progress.py",
+      "sha256": "d496248db42474c4bb6c8052c0749e7648f42a092fe3d6c109ffb466cf1af30f",
+      "role": "Official-test inference entry that writes result.txt, result.zip, progress log, and manifest.json."
+    },
+    {
+      "release_file": "phase104j_5090_current_phase104i_tail_loss.py",
+      "target_path": "phase104i_tail_loss.py",
+      "sha256": "4b2086aef283928a58ad651c53006556ba944c282dcf6edb9be913337fa3e88a",
+      "role": "Tail-weighted official loss used for Tail10 and phase104j long training."
+    }
+  ],
+  "run_scripts": [
+    {
+      "file": "phase104j_tailw_fulltrain1epoch_fromTail10_lr1e-5_bs4_5090.sh",
+      "sha256": "83ee3639d67b7b8bccd4ce2afe8fe71f294fcb46b131f9da77850b942fcda184",
+      "role": "PAAER/HR 1-epoch long training from Tail10 checkpoint."
+    },
+    {
+      "file": "phase89_mid_late_fulltrain_1epoch_20260618.sh",
+      "sha256": "25f19b1b6cab51117684389e198828a4e050f6e6150c9a4567a5ccb78909389a",
+      "role": "H8 mid-late 1-epoch training."
+    },
+    {
+      "file": "phase104i_HR_tailw_fulltrain10k_fromHR50_lr1e-5_bs4.sh",
+      "sha256": "3bac68ee9c8e023052b90b0023bc10ad88d1c5a96c3113795cfe77aabb6799c6",
+      "role": "Tail10 initialization run recipe; final release may instead provide the Tail10 checkpoint asset."
+    },
+    {
+      "file": "phase45_epoch2_launch_full.sh",
+      "sha256": "f7b724d46f2a3be22f95671f3a1c62d4bd7aa509a6e8b9a87d4148178bdc6bec",
+      "role": "reloc3r epoch2/rank1 resume launch script."
+    },
+    {
+      "file": "phase45_epoch2_full.env",
+      "sha256": "7080027dad345fb1c0f6d81ad6a800c26d9c54b5dc4232e34c5c96afbc48ecc1",
+      "role": "reloc3r epoch2/rank1 training environment/config."
+    },
+    {
+      "file": "phase45_train_pairuav_official_metric_longer_5090.sh",
+      "sha256": "0c0da6f0f2f11274a474eccbbf18385f058d3a56a14cdd96ff6f9d87f5fd09bc",
+      "role": "reloc3r epoch2/rank1 training wrapper called by phase45_epoch2_launch_full.sh."
+    },
+    {
+      "file": "phase45_train_pairuav_full_devsplit.sh",
+      "sha256": "775df6ff1d09955d68ea220312f5438e4b74cecc7a7c770983a370ace20fddf4",
+      "role": "Underlying full-devsplit PairUAV training script called by the phase45 wrapper."
+    },
+    {
+      "file": "phase45_epoch2_launch_official_test_infer.sh",
+      "sha256": "b30ef92675ce4802cd794ebfb0e0946c26cd9b0e207c071656f3ea325227fd66",
+      "role": "Original epoch2/rank1 official-test inference launch script."
+    }
+  ],
+  "checkpoint_assets": [
+    {
+      "name": "reloc3r_official_metric_full_epoch_checkpoint_last",
+      "role": "Source checkpoint-last resumed by the phase45 epoch2/rank1 training run.",
+      "sha256": "d08d66fe53fbbcf43ce451e406850c7300a12e5e588879811142d66e67f32c5d",
+      "size_note": "4.8G"
+    },
+    {
+      "name": "phase104j_paaer_hr_final",
+      "role": "Primary HR/PAAER final checkpoint used for HR raw official prediction.",
+      "sha256": "7454c0f2b31921cd917c21c3726a7cc1860bef03163c474ed689c19e7af4d01e",
+      "size_note": "1.7G",
+      "model": "Reloc3rRelpose(img_size=512, output_mode='pairuav_phase104e_paaer_hard_heading_range')"
+    },
+    {
+      "name": "phase104i_tail10_init",
+      "role": "Initialization checkpoint for phase104j long training.",
+      "sha256": "e7e42848b6e18cb31a713b0b95a9c4e7f6e529d7f9c6b2a3e26882a44bbf2f67",
+      "size_note": "1.7G"
+    },
+    {
+      "name": "phase89_h8_midlate_final",
+      "role": "H8 mid-late checkpoint used for H8 raw official prediction.",
+      "sha256": "cc985ac7671e7d6dc22928df7eb443ac4f95ad4e295333017e019f6da34216c8",
+      "size_note": "1.7G",
+      "model": "Reloc3rRelpose(img_size=512, output_mode='pairuav_range_h0_heading_mid_late_heading_range')"
+    },
+    {
+      "name": "phase45_epoch2_resume_final",
+      "role": "Legacy epoch2/rank1 checkpoint used for epoch2 raw official prediction.",
+      "model": "Reloc3rRelpose(img_size=512, output_mode='pairuav_heading_range')",
+      "sha256": "5681ab612d44dc64c98c82ef5b8b4e36c2bb4b38f6748a469f9c8d78c3894e04",
+      "size_note": "1.6G"
+    }
+  ],
+  "official_inference_manifests": [
+    {
+      "file": "phase104j_5090_hr_official_manifest.json",
+      "sha256": "edba36d26997305a0f8b0323953857b9e970993e298412b2b4f50175cee2d443",
+      "rows": 2773116,
+      "raw_result_txt_sha256": "6c7da711caac6e6feb91355f7936a820e29f0c3bb19f4affbdfe195f60a507ad",
+      "raw_zip_sha256": "294c1b96f352ed0c514423c943cc86b785db0ec86af696e99878ec17516615b1"
+    },
+    {
+      "file": "phase104j_5090_h8_official_manifest.json",
+      "sha256": "fee708fd0bab72f79641862dc23d2217917e64d663177f7298b160d09fabc8bd",
+      "rows": 2773116,
+      "raw_result_txt_sha256": "50ce60ce71465b7ddf3445e98ccca65576729a16e40d28556cd0678e1c213360",
+      "raw_zip_sha256": "b7c7347b5db8d471132e480d810086e187f27ff0249289ba8fdd4f27e4d6444b"
+    },
+    {
+      "file": "phase104j_5090_epoch2_official_manifest.json",
+      "sha256": "86cab99e0d3cff05e39c27c03dc75b23b504666194cb99dbce92b0c51976d85e",
+      "rows": 2773116,
+      "raw_result_txt_sha256": "956711c0c387d5db5999d3c464267e9eb56c4b036688693ec51538fecc4edeba",
+      "raw_zip_sha256": "7fd5fbc532fbc58dc70940ef84739ea552064971b547feb584f2e09d7e3cbcee"
+    }
+  ],
+  "handoff_to_B": {
+    "postprocess_script": "phase104j_rebuild_final_postprocess.py",
+    "postprocess_manifest": "phase104j_final_postprocess_manifest.json",
+    "final_zip_sha256": "3e53085ca02a8441d247c3aa96cfeee9d0e3dc5944431c9c56fc842b01fe8a0f"
+  }
+}

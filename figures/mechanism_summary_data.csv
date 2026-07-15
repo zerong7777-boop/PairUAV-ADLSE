@@ -1,0 +1,43 @@
+section,name,metric,value
+official_scores,MARB,final_score,0.003188
+official_scores,MARB,distance_rel_error,0.002528
+official_scores,MARB,angle_rel_error,0.003849
+official_scores,MDHR,final_score,0.00246
+official_scores,MDHR,distance_rel_error,0.002274
+official_scores,MDHR,angle_rel_error,0.002646
+official_scores,PAAER raw,final_score,0.002514
+official_scores,PAAER raw,distance_rel_error,0.002392
+official_scores,PAAER raw,angle_rel_error,0.002636
+official_scores,RSF e230,final_score,0.002413
+official_scores,RSF e230,distance_rel_error,0.002191
+official_scores,RSF e230,angle_rel_error,0.002636
+official_scores,PACE final,final_score,0.001874
+official_scores,PACE final,distance_rel_error,0.00133
+official_scores,PACE final,angle_rel_error,0.002419
+axis_controls,C0,angle_mae,1.7925
+axis_controls,C0,range_mae,4.5583
+axis_controls,H1,angle_mae,1.5958
+axis_controls,H1,range_mae,53.6993
+axis_controls,R1,angle_mae,122.2311
+axis_controls,R1,range_mae,3.6355
+axis_controls,HR,angle_mae,1.4985
+axis_controls,HR,range_mae,3.969
+axis_controls,H8 mid-late,angle_mae,1.8194
+axis_controls,H8 mid-late,range_mae,5.2569
+axis_controls,E1b+E2R,angle_mae,1.2363
+axis_controls,E1b+E2R,range_mae,4.5209
+geometry_axis_counts,heading,helpful,608
+geometry_axis_counts,heading,neutral/tie,135
+geometry_axis_counts,heading,harmful,68
+geometry_axis_counts,distance,helpful,10
+geometry_axis_counts,distance,neutral/tie,136
+geometry_axis_counts,distance,harmful,665
+representation_gaps,H8 val,heading_8bin,0.609033
+representation_gaps,H8 val,range_abs,0.25782
+representation_gaps,H8 val,range_signed,0.589821
+representation_gaps,H8 train,heading_8bin,0.599402
+representation_gaps,H8 train,range_abs,0.310556
+representation_gaps,H8 train,range_signed,0.544177
+representation_gaps,Wbounded val,heading_8bin,0.348172
+representation_gaps,Wbounded val,range_abs,0.218947
+representation_gaps,Wbounded val,range_signed,0.595233

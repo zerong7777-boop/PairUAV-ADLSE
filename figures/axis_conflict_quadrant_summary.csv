@@ -1,0 +1,5 @@
+regime,count,fraction
+both_helpful,49,0.060419
+heading_helpful_range_harmful,645,0.795314
+heading_harmful_range_helpful,4,0.004932
+both_harmful,113,0.139334

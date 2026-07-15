@@ -1,0 +1,11 @@
+section,name,family,angle_mae,distance_mae,axis,better,worse
+source_scatter,Split fusion,axis split,1.330926,4.024406,,,
+source_scatter,Axis decoupled,axis split,1.7769,0.9876,,,
+source_scatter,MASt3R geom,geometry,9.5863,33.2327,,,
+source_scatter,DUSt3R geom,geometry,11.0434,33.1489,,,
+source_scatter,MASt3R+VGGT,hybrid,11.78,7.8554,,,
+source_scatter,RoMa dense,matching,15.3929,19.4702,,,
+source_scatter,VGGT geom,geometry,52.512,14.1716,,,
+source_scatter,EffLoFTR,matching,55.3077,39.8429,,,
+b811_axis_counts,,,,,Heading,694,117
+b811_axis_counts,,,,,Distance,53,758

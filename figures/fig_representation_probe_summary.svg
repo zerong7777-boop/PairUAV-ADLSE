@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520">
+<rect x="0.0" y="0.0" width="820.0" height="520.0" rx="0.0" fill="#F6F8FA" stroke="none"/>
+<text x="34.0" y="38.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#24292F" text-anchor="start">Representation probes: pose-regime readability</text>
+<text x="34.0" y="62.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#57606A" text-anchor="start">True-vs-shuffle gaps from Phase95 probes. Larger gaps mean stronger readable regime structure.</text>
+<rect x="70.0" y="86.0" width="644.0" height="334.0" rx="8.0" fill="#FFFFFF" stroke="#D0D7DE"/>
+<line x1="82.0" y1="408.0" x2="702.0" y2="408.0" stroke="#E5E7EB" stroke-width="1.0"/>
+<text x="74.0" y="412.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#57606A" text-anchor="end">0.0</text>
+<line x1="82.0" y1="319.4" x2="702.0" y2="319.4" stroke="#E5E7EB" stroke-width="1.0"/>
+<text x="74.0" y="323.4" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#57606A" text-anchor="end">0.2</text>
+<line x1="82.0" y1="230.9" x2="702.0" y2="230.9" stroke="#E5E7EB" stroke-width="1.0"/>
+<text x="74.0" y="234.9" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#57606A" text-anchor="end">0.4</text>
+<line x1="82.0" y1="142.3" x2="702.0" y2="142.3" stroke="#E5E7EB" stroke-width="1.0"/>
+<text x="74.0" y="146.3" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#57606A" text-anchor="end">0.6</text>
+<rect x="137.3" y="138.3" width="28.0" height="269.7" rx="2.0" fill="#0072B2" stroke="none"/>
+<text x="151.3" y="132.3" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.61</text>
+<rect x="171.3" y="293.8" width="28.0" height="114.2" rx="2.0" fill="#009E73" stroke="none"/>
+<text x="185.3" y="287.8" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.26</text>
+<rect x="205.3" y="146.8" width="28.0" height="261.2" rx="2.0" fill="#CC79A7" stroke="none"/>
+<text x="219.3" y="140.8" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.59</text>
+<text x="185.3" y="433.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#24292F" text-anchor="middle">H8 val</text>
+<rect x="344.0" y="142.6" width="28.0" height="265.4" rx="2.0" fill="#0072B2" stroke="none"/>
+<text x="358.0" y="136.6" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.60</text>
+<rect x="378.0" y="270.5" width="28.0" height="137.5" rx="2.0" fill="#009E73" stroke="none"/>
+<text x="392.0" y="264.5" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.31</text>
+<rect x="412.0" y="167.0" width="28.0" height="241.0" rx="2.0" fill="#CC79A7" stroke="none"/>
+<text x="426.0" y="161.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.54</text>
+<text x="392.0" y="433.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#24292F" text-anchor="middle">H8 train</text>
+<rect x="550.7" y="253.8" width="28.0" height="154.2" rx="2.0" fill="#0072B2" stroke="none"/>
+<text x="564.7" y="247.8" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.35</text>
+<rect x="584.7" y="311.0" width="28.0" height="97.0" rx="2.0" fill="#009E73" stroke="none"/>
+<text x="598.7" y="305.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.22</text>
+<rect x="618.7" y="144.4" width="28.0" height="263.6" rx="2.0" fill="#CC79A7" stroke="none"/>
+<text x="632.7" y="138.4" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="400" fill="#57606A" text-anchor="middle">0.60</text>
+<text x="598.7" y="433.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#24292F" text-anchor="middle">Wbounded val</text>
+<text x="392.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#24292F" text-anchor="middle">probe split</text>
+<text x="26.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#24292F" text-anchor="middle" transform="rotate(-90.0 26.0 253.0)">same-minus-different gap</text>
+<rect x="608.0" y="116.0" width="12.0" height="12.0" rx="1.0" fill="#0072B2" stroke="none"/>
+<text x="626.0" y="127.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#24292F" text-anchor="start">heading_8bin</text>
+<rect x="608.0" y="139.0" width="12.0" height="12.0" rx="1.0" fill="#009E73" stroke="none"/>
+<text x="626.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#24292F" text-anchor="start">range_abs</text>
+<rect x="608.0" y="162.0" width="12.0" height="12.0" rx="1.0" fill="#CC79A7" stroke="none"/>
+<text x="626.0" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#24292F" text-anchor="start">range_signed</text>
+<text x="94.0" y="464.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#57606A" text-anchor="start">Reading: H8 preserves strong heading and signed-range regime readability; range_abs is weaker but above shuffle.</text>
+</svg>

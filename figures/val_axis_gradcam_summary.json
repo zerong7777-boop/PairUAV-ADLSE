@@ -1,0 +1,73 @@
+{
+  "checkpoint": "/media/jgzn/SSD_lexar/RZ/UAVM/runs/phase88_axiswise_interaction_position_v1/train_runs/phase89_Wstrip_T2_H8_mid_late_from_phase88_10k_fulltrain_1epoch_lr1e-5_bs4_pf20_20260618/checkpoint-final.pth",
+  "model": "Reloc3rRelpose(img_size=512, output_mode='pairuav_range_h0_heading_mid_late_heading_range')",
+  "json_root": "/media/jgzn/SSD_lexar/RZ/UAVM/runs/reloc3r_official_pairuav/phase49_reloc3r_official_4096_control_v1/surface/val_json",
+  "image_root": "/media/jgzn/SSD_lexar/RZ/UAVM/official/UAVM_2026/pairUAV/train_tour",
+  "load_state_dict": "<All keys matched successfully>",
+  "cases": [
+    {
+      "pair_id": "0893/51_09",
+      "target_heading_deg": -120.0,
+      "target_range": 105.0,
+      "pred_heading_deg": -119.99713897705078,
+      "pred_range": 104.90938568115234,
+      "heading_loss": 6.286891007789563e-10,
+      "range_loss": 0.0041054775938391685,
+      "heading_objective": 1.0,
+      "range_objective": 104.90938568115234,
+      "gradient_target": "target_aligned_output",
+      "heatmap_corr": 0.0,
+      "heatmap_cosine": 0.8697607517242432,
+      "top20_overlap": 0.23376821545738918,
+      "mean_abs_diff": 0.49591538310050964
+    },
+    {
+      "pair_id": "0997/04_54",
+      "target_heading_deg": -79.99999999999994,
+      "target_range": -125.0,
+      "pred_heading_deg": -80.00373840332031,
+      "pred_range": -125.03337097167969,
+      "heading_loss": 1.0656378002238398e-09,
+      "range_loss": 0.0005568108754232526,
+      "heading_objective": 0.9999999403953552,
+      "range_objective": 125.03337097167969,
+      "gradient_target": "target_aligned_output",
+      "heatmap_corr": 0.0,
+      "heatmap_cosine": 0.8282479643821716,
+      "top20_overlap": 0.0014496070801861601,
+      "mean_abs_diff": 0.7906599044799805
+    },
+    {
+      "pair_id": "0893/51_02",
+      "target_heading_deg": 100.0,
+      "target_range": 122.5,
+      "pred_heading_deg": 100.09967803955078,
+      "pred_range": 122.05223083496094,
+      "heading_loss": 7.566114277324232e-07,
+      "range_loss": 0.10024861246347427,
+      "heading_objective": 0.9999985098838806,
+      "range_objective": 122.05223083496094,
+      "gradient_target": "target_aligned_output",
+      "heatmap_corr": 0.4222525013175071,
+      "heatmap_cosine": 0.9301692843437195,
+      "top20_overlap": 0.5428905673812975,
+      "mean_abs_diff": 0.19386060535907745
+    },
+    {
+      "pair_id": "0934/14_46",
+      "target_heading_deg": -79.99999999999994,
+      "target_range": -80.0,
+      "pred_heading_deg": -79.99565124511719,
+      "pred_range": -80.00016021728516,
+      "heading_loss": 1.4422827376847636e-09,
+      "range_loss": 1.2834789231419563e-08,
+      "heading_objective": 1.0,
+      "range_objective": 80.00016021728516,
+      "gradient_target": "target_aligned_output",
+      "heatmap_corr": 0.0,
+      "heatmap_cosine": 0.7691962718963623,
+      "top20_overlap": 0.18682129142188653,
+      "mean_abs_diff": 0.6785097718238831
+    }
+  ]
+}

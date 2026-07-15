@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520">
+<rect width="1180" height="520" fill="#ffffff"/>
+<text x="40.0" y="42.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#263238">Source Adaptation Evidence: Axis-Conditional Utility</text>
+<text x="40.0" y="67.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#263238">Lower MAE is better. Diagnostic surfaces are internal and not hidden-test leaderboard results.</text>
+<rect x="36" y="88" width="545" height="350" rx="8" fill="#F8FAFC" stroke="#DDE4EA"/>
+<text x="58.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#263238">A. Source utility scatter</text>
+<line x1="70" y1="390" x2="525" y2="390" stroke="#455A64" stroke-width="1.2"/>
+<line x1="70" y1="88" x2="70" y2="390" stroke="#455A64" stroke-width="1.2"/>
+<text x="278.0" y="426.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#263238">Heading MAE</text>
+<text x="22" y="245" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#263238" transform="rotate(-90 22 245)">Distance MAE</text>
+<line x1="70.0" y1="390" x2="70.0" y2="395" stroke="#455A64"/>
+<text x="70.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#263238">0</text>
+<line x1="183.8" y1="390" x2="183.8" y2="395" stroke="#455A64"/>
+<text x="183.8" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#263238">15</text>
+<line x1="183.8" y1="88" x2="183.8" y2="390" stroke="#DCE3EA" stroke-width="0.8"/>
+<line x1="297.5" y1="390" x2="297.5" y2="395" stroke="#455A64"/>
+<text x="297.5" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#263238">30</text>
+<line x1="297.5" y1="88" x2="297.5" y2="390" stroke="#DCE3EA" stroke-width="0.8"/>
+<line x1="411.2" y1="390" x2="411.2" y2="395" stroke="#455A64"/>
+<text x="411.2" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#263238">45</text>
+<line x1="411.2" y1="88" x2="411.2" y2="390" stroke="#DCE3EA" stroke-width="0.8"/>
+<line x1="525.0" y1="390" x2="525.0" y2="395" stroke="#455A64"/>
+<text x="525.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#263238">60</text>
+<line x1="525.0" y1="88" x2="525.0" y2="390" stroke="#DCE3EA" stroke-width="0.8"/>
+<line x1="65" y1="390.0" x2="70" y2="390.0" stroke="#455A64"/>
+<text x="58.0" y="394.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#263238">0</text>
+<line x1="65" y1="289.3" x2="70" y2="289.3" stroke="#455A64"/>
+<text x="58.0" y="293.3" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#263238">15</text>
+<line x1="70" y1="289.3" x2="525" y2="289.3" stroke="#DCE3EA" stroke-width="0.8"/>
+<line x1="65" y1="188.7" x2="70" y2="188.7" stroke="#455A64"/>
+<text x="58.0" y="192.7" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#263238">30</text>
+<line x1="70" y1="188.7" x2="525" y2="188.7" stroke="#DCE3EA" stroke-width="0.8"/>
+<line x1="65" y1="88.0" x2="70" y2="88.0" stroke="#455A64"/>
+<text x="58.0" y="92.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#263238">45</text>
+<line x1="70" y1="88.0" x2="525" y2="88.0" stroke="#DCE3EA" stroke-width="0.8"/>
+<circle cx="80.1" cy="363.0" r="6.5" fill="#009E73" stroke="#263238" stroke-width="0.8"/>
+<text x="88.1" y="353.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">Split fusion</text>
+<circle cx="83.5" cy="383.4" r="6.5" fill="#0072B2" stroke="#263238" stroke-width="0.8"/>
+<text x="91.5" y="400.4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">Axis decoupled</text>
+<circle cx="142.7" cy="167.0" r="6.5" fill="#E69F00" stroke="#263238" stroke-width="0.8"/>
+<text x="150.7" y="158.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">MASt3R geom</text>
+<circle cx="153.7" cy="167.5" r="6.5" fill="#D55E00" stroke="#263238" stroke-width="0.8"/>
+<text x="161.7" y="182.5" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">DUSt3R geom</text>
+<circle cx="159.3" cy="337.3" r="6.5" fill="#CC79A7" stroke="#263238" stroke-width="0.8"/>
+<text x="167.3" y="327.3" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">MASt3R+VGGT</text>
+<circle cx="186.7" cy="259.3" r="6.5" fill="#56B4E9" stroke="#263238" stroke-width="0.8"/>
+<text x="194.7" y="249.3" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">RoMa dense</text>
+<circle cx="468.2" cy="294.9" r="6.5" fill="#F0E442" stroke="#263238" stroke-width="0.8"/>
+<text x="376.2" y="284.9" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">VGGT geom</text>
+<circle cx="489.4" cy="122.6" r="6.5" fill="#999999" stroke="#263238" stroke-width="0.8"/>
+<text x="419.4" y="112.6" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" text-anchor="start" fill="#263238">EffLoFTR</text>
+<rect x="620" y="88" width="520" height="350" rx="8" fill="#FFFBF4" stroke="#E7DCC8"/>
+<text x="642.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#263238">B. B811 geometry utility by axis</text>
+<text x="642.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#263238">Direct lower-error pair counts, base vs geometry source.</text>
+<text x="642.0" y="213.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#263238">Heading</text>
+<rect x="680" y="190" width="333.7" height="34" fill="#009E73"/>
+<rect x="1013.7" y="190" width="56.3" height="34" fill="#D55E00"/>
+<rect x="680" y="190" width="390" height="34" fill="none" stroke="#263238" stroke-width="0.8"/>
+<text x="688.0" y="213.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#263238">better 694</text>
+<text x="1062.0" y="213.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="end" fill="#263238">worse 117</text>
+<text x="642.0" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#263238">Distance</text>
+<rect x="680" y="285" width="25.5" height="34" fill="#009E73"/>
+<rect x="705.5" y="285" width="364.5" height="34" fill="#D55E00"/>
+<rect x="680" y="285" width="390" height="34" fill="none" stroke="#263238" stroke-width="0.8"/>
+<text x="688.0" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="start" fill="#263238">better 53</text>
+<text x="1062.0" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="end" fill="#263238">worse 758</text>
+<rect x="680" y="390" width="13" height="13" fill="#009E73"/>
+<text x="700.0" y="401.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#263238">geometry lower error</text>
+<rect x="850" y="390" width="13" height="13" fill="#D55E00"/>
+<text x="870.0" y="401.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#263238">geometry higher error</text>
+<text x="642.0" y="428.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" fill="#263238">Takeaway: geometry is usually good for heading and unsafe for distance.</text>
+</svg>
